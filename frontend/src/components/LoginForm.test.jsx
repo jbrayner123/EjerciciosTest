@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import { vi, test, expect } from 'vitest'
 import LoginForm from './LoginForm'
 
-test.skip('submits email and password', () => {
+test('submits email and password', () => {
   const onSubmit = vi.fn()
   render(<LoginForm onSubmit={onSubmit} />)
 
